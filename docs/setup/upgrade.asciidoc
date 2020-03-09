@@ -1,0 +1,40 @@
+[[upgrade]]
+== Upgrading {kib}
+
+The upgrade process varies, depending on the version you're currently using.
+
+[IMPORTANT]
+===========================================
+Before you upgrade:
+
+* Consult the <<breaking-changes,breaking changes>>.
+* Before you upgrade production servers, test upgrades in a dev environment.
+* Back up your data with Elasticsearch {ref}/modules-snapshots.html[snapshots]. To roll back to an earlier version, you **must** have a backup of your data.
+* If you are using custom plugins, check that a compatible version is
+  available.
+* Shut down all {kib} nodes. Running more than one version against the same {es} index is unsupported. If you upgrade while older {kib} nodes are running, the upgrade can fail.
+===========================================
+
+To determine the upgrade process to follow, refer to the table.
+
+[cols="<1m,<1m,3",options="header"]
+|=======================================================================
+|Upgrade From   |Upgrade To     |Supported Upgrade Type
+|3.x            |5.x            |<<upgrade-new-install,New installation>>
+|4.0 or 4.1     |5.x            |<<upgrade-standard-reindex,Standard upgrade & reindex>>
+|4.x >= 4.2     |5.x            |<<upgrade-standard,Standard upgrade>>
+|5.0.0 pre GA   |5.x            |<<upgrade-standard-reindex,Standard upgrade & reindex>>
+|5.x            |5.y            |<<upgrade-standard,Standard upgrade>> (where `y > x`)
+|5.x            |6.x            |<<upgrade-standard,Standard upgrade>> & <<migrating-6.0-index,Reindex transformation>>
+|6.x            |6.y            |<<upgrade-standard,Standard upgrade>> (where `y > x`)
+|=======================================================================
+
+NOTE: Saved searches, visualizations, and dashboards created in {kib} 4.x or 5.x can be generally imported into 6.x.
+
+include::upgrade/upgrade-standard.asciidoc[]
+
+include::upgrade/upgrade-standard-reindex.asciidoc[]
+
+include::upgrade/upgrade-new-install.asciidoc[]
+
+include::upgrade/upgrade-migrations.asciidoc[]

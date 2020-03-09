@@ -1,0 +1,23 @@
+<svg width="252" height="45" xmlns="http://www.w3.org/2000/svg">
+ <metadata id="metadata4270">image/svg+xml</metadata>
+
+ <!-- &quot;Helvetica Neue&quot; is a trademark of Heidelberger Druckmaschinen AG, which may be registered in certain jurisdictions, exclusivly licensed through Linotype Library GmbH, a wholly owned subsidiary of Heidelberger Druckmaschinen AG. -->
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="rect4248" height="45" width="252" fill="none"/>
+  <rect id="rect4250" height="45" width="6.094" fill="#85C441"/>
+  <rect id="rect4252" height="45" width="6.094" fill="#2C448E" x="5.958"/>
+  <rect id="rect4254" height="45" width="9.847" fill="#F2BB1A" x="12.052"/>
+  <rect id="rect4256" height="45" width="6.068" fill="#3BBEB1" x="21.899"/>
+  <rect id="rect4258" height="45" width="2.84" fill="#006656" x="28.029"/>
+  <rect id="rect4260" height="45" width="15.006" fill="#EA458B" x="30.869"/>
+  <rect y="-10" id="rect4262" height="74" width="207.5" fill="none" x="18.5"/>
+  <g font-size="64.999474px" font-family="HelveticaNeue-Bold" fill="#ffffff" id="text4264">
+   <text stroke="null" transform="matrix(2.0996978282928467,0,0,1.7777777910232544,-68.73111426830292,-9.296875158324838) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_1" y="27.203125" x="59.642446" stroke-opacity="null" stroke-width="0" fill="#bfbfbf">Banana</text>
+  </g>
+ </g>
+</svg>
